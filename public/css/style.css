@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: aquamarine;
+}
+
+body{
+
+    font-family: 'Roboto', sans-serif;
+    height: 700px;
+    width: 700px;
+    background-color: #e51a13;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+h3{
+    font-size: 16px;
+    color: blueviolet;
+    padding: 10px;
+    border-bottom: 1px solid red;
+}
+
+table{
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+  /*  border-collapse: collapse;*/
+}
+.addbtnn{
+    background-color: darkslategrey;
+    position: absolute;
+    top: 25px;
+    left: 424px;
+    text-align: right;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 2px 10px 2px 10px;
+}
+h2{
+    background-color: white;
+    font-size: 40px;
+}
+table thead td{
+    padding: 5px;
+    background-color: rgba(17, 15, 6, 0.945);
+    color: red;
+}
+
+table tbody td{
+    padding: 5px;
+    background-color: white;
+}
+
+table tbody tr:nth-child(even){
+    background-color: white;
+}
+
+.edit, .delete, .addbtn{
+    text-decoration: none;
+    color: white;
+    padding: 2px 10px 2px 10px;
+    text-align: center;
+    border-radius: 3px;
+    background-color: blueviolet;
+}
+
+.delete{
+    background-color: red;
+}
+
+p{
+    text-align: right;
+    padding: 5px;
+}
+
+.addbtn{
+    background-color: darkslategrey;
+}
+
+.form-group{
+    margin-top: 10px;
+    padding: 5px;
+   
+}
+
+.form-group label,.form-group input{
+    display: block;
+}
+
+button{
+    color: white;
+    padding: 2px 10px 2px 10px;
+    border-radius: 3px;
+    background-color: blueviolet;
+}
+
+.form-center {
+    position: relative;
+    left :40%;
+    top: 20%;;
+  }
+
+  .alert{
+    display: block;
+    padding: 5px;
+    background-color:rgb(54, 223, 223);
+    border-radius: 5px;
+    height: 33px;
+    top:10%;
+    text-align: center;
+    font-size: 30px;
+    
+    
+  }
+/*
+  marquee {
+    position: relative;
+    top:40%;
+    animation: blinker 0.5s linear infinite;
+    color: red;
+    font-family: sans-serif;
+    font-size: 40px;
+  }
+  @keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+
+  }
+
+  .dcb{
+    text-decoration: none;
+    background-color: rgb(60, 60, 211);
+    position: relative;
+    top: 50%;
+    left: 40%;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    
+  }
+*/
+  .all{
+    display: block;
+    padding: 5px;
+    background-color: red;
+    border-radius: 5px;
+    height: 50px;
+    top:10%;
+    text-align: center;
+    
+  }
+
+ 
+
+
+
+
+
+
+
+/*
+  body{
+    margin: 0;
+    padding: 0;
+    background-color: red;
+ }
+ */
+ .login-page{
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      width: 400px;  
+      padding: 40px;
+      transform: translate(-50%, -50%);
+      background: black;
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px rgba(0,0,0,.6);
+      border-radius: 10px;
+ }
+ .login-page h2 {
+           margin: 0 0 30px;
+        padding: 0;
+       color:DodgerBlue /*rgb(15, 214, 105)*/;
+       background:black;
+     text-align: center;
+     font-size: 40px;
+ }
+ .login-page .user-box 
+ {
+  position: relative;
+ }
+ .login-page .user-box input{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+ }
+ .login-page .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0; 
+  font-size: 16px;
+  color:rgb(251, 247, 29);
+ /* painter-events: none;*/
+  transition:.5s;
+ }
+  .login-page .user-box input:focus ~ label,
+  .login-page .user-box Input:valid ~ label{
+  top: -20px;
+  left: 0;
+  font-size: 12px;
+  color: #03e9f4;
+ }
+ .login-page form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color : #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition:.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+ }
+ .login-page
+  #submit:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+          0 0 50px  #03e9f4,
+          0 0 100px  #03e9f4;
+ }
+ 

@@ -1,0 +1,32 @@
+{{#if msg}}
+<div class="alert">{{msg}}</div>
+{{/if}}
+
+<h2>Hello everyone</h2>
+<p><a href="/adduser" class="addbtn">Add User</a></p>
+<p><a href="/" class="addbtn">Home</a></p>
+<table>
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Names</td>
+            <td>Age</td>
+            <td>City</td>
+            <td>Edit</td>
+            <td>Delete</td>
+            
+        </tr>
+    </thead>
+    <tbody>
+        {{#each rows}}
+       <tr>
+        <td>{{this.ID}}</td>
+        <td>{{this.NAMES}}</td>
+        <td>{{this.AGE}}</td>
+        <td>{{this.CITY}}</td>
+        <td><a class="edit" href="/edituser/{{this.ID}}">Edit</a></td>
+        <td><a onclick="return confirm('Are you sure?')" class="delete" href="/deleteuser/{{this.ID}}">Delete</a></td>
+       </tr>
+       {{/each}}
+    </tbody>
+</table>

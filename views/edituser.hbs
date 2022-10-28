@@ -1,0 +1,29 @@
+
+{{#if msg}}
+<div class="alert">{{msg}}</div>
+{{/if}}
+<h2>Edit user Info</h2>
+{{#each rows}}
+<form method="post" action="/edituser/{{this.ID}}" autocomplete="false" class="form-center">
+    <div class="form-group">
+        <lable for="name">NAME</lable>
+        <input type="text " name="name" value="{{this.NAMES}}">
+    </div>
+
+    <div class="form-group">
+        <lable for="age">AGE</lable>
+        <input type="text" name="age" value="{{this.AGE}}">
+    </div>
+
+    <div class="form-group">
+        <lable for="city">CITY</lable>
+        <input type="text" name="city" value="{{this.CITY}}">
+    </div>
+
+    <div class="form-group">
+        <button type="submit">EDIT</button>
+        <a href="/datas">view all</a>
+    </div>
+</form>
+
+{{/each}}
